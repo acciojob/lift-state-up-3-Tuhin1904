@@ -6,7 +6,6 @@ import ChildComponent2 from "./ChildComponent2";
 const App = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const handleSelectedOption = (option) => {
-    console.log(option, "option");
     setSelectedOption(option);
   };
   return (
@@ -14,7 +13,7 @@ const App = () => {
       <h1>Parent Component</h1>
       <ChildComponent1 handleSelectedOption={handleSelectedOption} />
       <ChildComponent2 handleSelectedOption={handleSelectedOption} />
-      Selected Option: {selectedOption}
+      <p>Selected Option: {selectedOption}</p>
     </div>
   );
 };
