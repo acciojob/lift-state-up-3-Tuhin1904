@@ -9,7 +9,7 @@ const App = () => {
     setSelectedOption(option);
   };
   return (
-    <div style={{ background: "green", padding: "16px" }}>
+    <div style={{ background: "green", padding: "16px" }} className="parent">
       <h1>Parent Component</h1>
       <ChildComponent1 handleSelectedOption={handleSelectedOption} />
       <ChildComponent2 handleSelectedOption={handleSelectedOption} />
